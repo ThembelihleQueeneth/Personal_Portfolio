@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background-image: url('backpic.png');
+        }
+        .first{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .logo{
+            width: 180px;
+        }
+        .logo img{
+            width: 180;
+        }
+       nav{
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px o;
+        align-items: center;
+        justify-content: space-between;
+       }
+       nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+       }
+       nav ul li a{
+
+        text-decoration: none;
+        color: rgb(239, 102, 239);
+        font-weight: bold;
+       }
+       nav ul li a:hover{
+            color: aqua;
+       }
+       .first logo{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+       }
+       .second{
+        display: flex;
+       }
+        .personal{
+            font-family: serif;
+            color: white;
+        }
+        
+       .logo{
+        border-radius: 50%;
+       }
+       .second{
+        align-items: center;
+        justify-content: space-between;
+        color: black;
+        font-size: larger;
+        border-radius: 1%;
+       }
+       .third{
+        border-style: outset;
+        border-width: 5px;
+        border-color: rgb(188, 156, 219);
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <nav>
+            <img src="logopic.jpg" class="logo" height="100px" width="300px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#details">About me</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+         
+    
+</nav> 
+<br>
+<video width="90%" height="400" controls autoplay>
+    <source src="video1.mp4" type="video/mp4">
+</video>
+</div>
+<div class="personal">
+<a name = "details"><i>About Me</i></a>
+<h1> <i>Hi</i> I'm <b>Thembelihle Maluka</b></h1>
+</div>
+<div class="second">
+   
+    
+    <p>Welcome to my Personal Portfolio. I'm a young aspiring web developer.
+        I'm fascinated about the world of technology.I love website creation so much.
+        Websites are not just digital spaces; they're dynamic platforms where ideas come to life.
+        The ability to build something from scratch and see it come alive on the internet is incredibly rewarding to me.
+    </p>
+    <img src="picture.jpg" alt="" height="200px" width="200px">
+</div>
+    
+</body>
+<br>
+<footer >
+    <h2><a name = "contact">Contact Us:</a></h2>
+    <div class="third">
+    <a href="mailto:malukathembelihle95@gmail.com">&#x2709; Email</a><br>
+    <a href="tel:+27 79 331 6193">&#x2706; Phone</a><br>
+    <a href="https://www.linkedin.com/feed/"> &#xF472;LinkedIn</a>
+    </div>
+</footer>
+</html>
