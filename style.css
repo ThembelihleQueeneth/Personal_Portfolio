@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 130, 180);
+  }
+  
+  header {
+    background-color: goldenrod;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ede6d6;
+
+  }
+  .pictures{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pictures img{
+    width: 200px;
+    height: 200x;
+    border-radius: 50%;
+  }
+  
+  
+  .profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  li a:hover{
+    color: orangered;
+    transition: 0.5s;
+}
+  
+  section {
+    padding: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .pp {
+    width: 350px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid black;
+    overflow: hidden;
+    
+    float: right;
+
+
+  }
+
+
+  
+  
