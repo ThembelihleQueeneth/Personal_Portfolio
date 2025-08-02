@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    color: #000000;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    
+}
+nav> div{
+    margin: 10px;
+    padding: 10px;
+    
+}
+nav > div > a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+}
+nav > div > a:hover{
+    text-decoration: underline solid #FEBE10;
+}
+nav > div > button{
+   padding: 10px; 
+   background-color: #FEBE10;
+   border-radius: 12px;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+}
+nav > div > button:hover{
+    background-color: yellow;
+    color: #000;
+
+}
+#logo{
+    width: 100%;
+    height: 10vh;
+    
+}
+#logo_name, #fullstack{
+ font-size:2em;
+ font-family: 'Courier New', Courier, monospace;
+ text-decoration: none;
+ color: #FEBE10;
+ cursor: none;
+}
+/* Styling main Content */
+main{
+    margin: 10px;
+}
+
+/* Styling the about section */
+
+.about img{
+    width: 50%;
+    height: 70vh;
+}
+.about h1{
+    font-size: 46px;
+     font-weight: 100;
+
+}
+.about p{
+    font-size: 36px;
+     font-weight: 100;
+}
+.about #name{
+    text-decoration: underline solid #FEBE10;
+}
+.experience{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.experience h2{
+    text-decoration: underline solid #FEBE10;
+    font-weight: 100;
+}
+#timeline{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#timeline hr{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+#timeline > div{
+    width: 50%;
+    height: 60vh;
+    border: none;
+}
+.stack-cards{
+    margin-top: 10px;
+}
+.stack-cards h2{
+    text-align: center;
+}
+.stack{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    
+}
+.stack > div {
+    border: 1px solid #000;
+    border-left: 10px solid #FEBE10;
+    border-radius: 12px;
+}
+.stack > div h3{
+    font-weight: 100;
+    text-align: center;
+}
+.stack > div img{
+    margin: 10px;
+    width: 50%;
+    height: 10vh;
+}
+
+/* Projects */
+.project-heading{
+    text-align: center;
+    margin: 20px;
+}
+.projects {
+    display: flex;
+    gap: 10px;
+    
+}
+.projects h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.projects> div{
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    border-left: 10px solid #FEBE10;
+}
+.projects img{
+    width: 50%;
+    height: 30vh;
+    border-radius: 12px;
+    
+}
+.projects button{
+   padding: 10px; 
+   background-color: #FEBE10;
+   border-radius: 12px;
+   border: none;
+   
+   cursor: pointer;
+}
+.projects button:hover{
+    background-color: yellow;
+    
+}
+.projects i{
+    font-size: 30px;
+    margin: 10px;
+}
+.projects a{
+    text-decoration: none;
+    color: #fff;
+}
+.projects a:hover{
+    color: #000;
+
+}
