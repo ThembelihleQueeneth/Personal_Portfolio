@@ -3,186 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thembelihle's Website</title>
+    <meta name="description" content="Thembelihle Queeneth Maluka - Full Stack Developer Portfolio">
+    <title>Thembelihle Maluka | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="" id="logo_name">TQM</a>
-        </div>
-        <div>
-            <a href="">About</a>
-            <a href="">Experience</a>
-            <a href="">Stack</a>
-            <a href="">Projects</a>
-            <a href="">Services</a>
-        </div>
-        <div>
-            <button>
-                Resume
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <a href="#" id="logo_name">TQM</a>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-resume">
+                    <i class="bi bi-download"></i> Resume
+                </button>
+                <button class="btn-hire">
+                    Hire Me <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="bi bi-list"></i>
             </button>
-            <button>
-                Hire Me
-            </button>
-        </div>
-    </nav>
-    <hr>
+        </nav>
+    </header>
+
     <main>
-        <section class="about">
-            <div>
-                <img src="media/images/cartoon-portrait-of-young-african-woman-with-afro-hairstyle-vector.jpg" alt="">
-                <h1>Hi THERE</h1>
-                <p>I'm <span id="name">Thembelihle Queeneth Maluka</span></p>
-                <p>A <span id="fullstack">FullStack</span> Developer</p>
+        <section id="about" class="about section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="greeting">Hi THERE</h1>
+                    <h2 class="name">I'm <span>Thembelihle Queeneth Maluka</span></h2>
+                    <h3 class="title">A <span class="highlight">FullStack</span> Developer</h3>
+                    <p class="bio">Passionate about creating elegant, efficient solutions to complex problems. I specialize in building responsive, accessible web applications with modern technologies.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="media/images/cartoon-portrait-of-young-african-woman-with-afro-hairstyle-vector.jpg" alt="Thembelihle's portrait">
+                </div>
             </div>
         </section>
-        <hr>
-        
-        <section class="experience">
-            <h2>
-                Experience and Education
-            </h2>
 
-            <div id="timeline">
-                <div>
-                    <h3><i class="bi bi-person-workspace"></i>Fullstack Trainee</h3>
-                    <p><i class="bi bi-geo-alt-fill"></i>Mlab</p>
-                    <i class="bi bi-card-list"></i> lorem</p>
-
-                </div>
-                <div>
-                    <hr>
-
-                </div>
-                <div>
-                    <p><i class="bi bi-calendar-check-fill"></i>July 2025 - Present</p>
-                </div>
-            </div>
-
-             <div id="timeline">
-                <div>
-                    <h3><i class="bi bi-mortarboard-fill"></i>FullStack Developer Intern</h3>
-                    <p><i class="bi bi-geo-alt-fill"></i>Hiteknology Solution</p>
-                    <i class="bi bi-card-list"></i> lorem</p>
-
-                </div>
-                <div>
-                    <hr>
-
-                </div>
-                <div>
-                    <p><i class="bi bi-calendar-check-fill"></i>September 2024 - May 2025</p>
-                </div>
-            </div>
+        <section id="experience" class="experience section">
+            <h2 class="section-title">Experience and Education</h2>
             
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="bi bi-person-workspace timeline-icon"></i>
+                            <h3>Fullstack Trainee</h3>
+                            <span class="timeline-date">July 2025 - Present</span>
+                        </div>
+                        <p class="timeline-company"><i class="bi bi-geo-alt-fill"></i> Mlab</p>
+                        <ul class="timeline-description">
+                            <li>Developing full-stack web applications using modern JavaScript frameworks</li>
+                            <li>Collaborating with cross-functional teams to deliver high-quality software</li>
+                            <li>Implementing responsive designs and optimizing application performance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="bi bi-briefcase timeline-icon"></i>
+                            <h3>FullStack Developer Intern</h3>
+                            <span class="timeline-date">September 2024 - May 2025</span>
+                        </div>
+                        <p class="timeline-company"><i class="bi bi-geo-alt-fill"></i> Hiteknology Solution</p>
+                        <ul class="timeline-description">
+                            <li>Assisted in developing and maintaining web applications</li>
+                            <li>Participated in code reviews and team meetings</li>
+                            <li>Fixed bugs and implemented new features</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <i class="bi bi-mortarboard-fill timeline-icon"></i>
+                            <h3>Diploma in Computer Science</h3>
+                            <span class="timeline-date">May 2021 - May 2025</span>
+                        </div>
+                        <p class="timeline-company"><i class="bi bi-geo-alt-fill"></i> Tshwane University of Technology</p>
+                        <ul class="timeline-description">
+                            <li>Specialized in software development and web technologies</li>
+                            <li>Completed coursework in data structures, algorithms, and database systems</li>
+                            <li>Graduated with distinction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="stack section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="stack-container">
+                <div class="stack-category">
+                    <h3><i class="bi bi-layout-sidebar"></i> Front-End</h3>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <img src="media/images/html.png" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/css3.png" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/Bootstrap_logo.svg.png" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/javascript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3><i class="bi bi-server"></i> Back-End</h3>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <img src="media/images/java.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/nodejs.jpg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/MySQL-logo.png.webp" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3><i class="bi bi-tools"></i> Tools</h3>
+                    <div class="stack-items">
+                        <div class="stack-item">
+                            <img src="media/images/git.jpg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/github.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="stack-item">
+                            <img src="media/images/vercel.png" alt="Vercel">
+                            <span>Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/images/studio88.jpg" alt="Studio 88 Clone">
+                    </div>
+                    <div class="project-content">
+                        <h3>Studio 88 Clone</h3>
+                        <p>A responsive e-commerce website clone featuring product listings, shopping cart functionality, and secure checkout process.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://studio88-clone.vercel.app/" class="btn-demo" target="_blank">
+                                Live Demo <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn-code" target="_blank">
+                                Code <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/images/spane4all.png" alt="Spane 4 All" style="background-color: #000;">
+                    </div>
+                    <div class="project-content">
+                        <h3>Spane 4 All</h3>
+                        <p>As an intern developer, I collaborated with a team to enhance a platform's features, including user interfaces and job listing pages, enhancing my skills in teamwork, problem-solving, and real-world project delivery.</p>
+                        <div class="project-tech">
+                            <span>Bootstrap</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://spane4all.co.za/" class="btn-demo" target="_blank">
+                                Live Demo <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/images/blog.jpeg" alt="Tech Talk Blog">
+                    </div>
+                    <div class="project-content">
+                        <h3>Tech-Talk-Blog</h3>
+                        <p>A technology blog platform with user authentication, article management, and commenting system.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://tech-talk-blog-eta.vercel.app/" class="btn-demo" target="_blank">
+                                Live Demo <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                            <a href="#" class="btn-code" target="_blank">
+                                Code <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-subtitle">I'm available for freelance work and full-time opportunities</p>
             
-            <div id="timeline">
-                <div>
-                    <h3><i class="bi bi-mortarboard-fill"></i>Diploma in Computer Science</h3>
-                    <p><i class="bi bi-geo-alt-fill"></i>Tshwane Unirvesity of Technology</p>
-                    <i class="bi bi-card-list"></i> lorem</p>
-
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div>
-                    <hr>
-
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div>
-                    <p><i class="bi bi-calendar-check-fill"></i>May 2021 - May 2025</p>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill"></i></button>
+            </form>
         </section>
-        <hr>
-
-      
-
-        <section class="stack-cards">
-            <h2>Stack</h2>
-            <div class="stack">
-            <div>
-                <h3>FRONT-END</h3>
-                <div style="display: flex;">
-                <img src="media/images/html.png" alt="">
-                <img src="media/images/css3.png" alt="">
-                <img src="media/images/Bootstrap_logo.svg.png" alt="">
-                <img src="media/images/javascript.png" alt="">
-                </div>
-            </div>
-
-            <div>
-                <h3>BACK-END</h3>
-            <div style="display: flex;">
-                <img src="media/images/java.png" alt="">
-                <img src="media/images/nodejs.jpg" alt="">
-                <img src="media/images/MySQL-logo.png.webp" alt="">
-            </div>
-            </div>
-            <div>
-                <h3>OTHER STACKS</h3>
-           
-            <div style="display: flex;">
-                <img src="media/images/git.jpg" alt="">
-                <img src="media/images/github.png" alt="">
-                <img src="media/images/vercel.png" alt="">
-            </div>
-             </div>
-            </div>
-        </section>
-        <hr>
-
-        <section class="project-cards">
-            <div class="project-heading">
-                <h2>
-                    Projects
-                </h2>
-            </div>
-            <div class="projects">
-                <div>
-                    <h3>Studio 88 Clone</h3>
-                    <img src="media/images/studio88.jpg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Neque repellat saepe natus porro praesentium <br> suscipit voluptatum itaque accusamus vero,<br> sapiente hic quae aperiam placeat pariatur quo veritatis quas ut autem.</p>
-                    
-                        <button><a href="https://studio88-clone.vercel.app/">View Demo<i class="bi bi-file-play"></i></a></button>
-                        <button><a href="">View Source Code<i class="bi bi-github"></i></a></button>
-                    
-
-                </div>
-                <div>
-                    <h3></h3>
-                    <h3>Spane 4 All</h3>
-                    <img style="background-color: #000;" src="media/images/spane4all.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Neque repellat saepe natus porro praesentium <br> suscipit voluptatum itaque accusamus vero,<br> sapiente hic quae aperiam placeat pariatur quo veritatis quas ut autem.</p>
-                    
-                        <button><a href="https://spane4all.co.za/">View Demo<i class="bi bi-file-play"></i></a></button>
-                        
-                    
-                </div>
-                <div>
-                     <h3>Tech-Talk-Blog</h3>
-                    <img src="media/images/blog.jpeg" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Neque repellat saepe natus porro praesentium <br> suscipit voluptatum itaque accusamus vero,<br> sapiente hic quae aperiam placeat pariatur quo veritatis quas ut autem.</p>
-                    
-                        <button><a href="https://tech-talk-blog-eta.vercel.app/">View Demo<i class="bi bi-file-play"></i></a></button>
-                        <button><a href="">View Source Code<i class="bi bi-github"></i></a></button>
-                    
-                </div>
-                <
-            </div>
-        </section>
-        <hr>
-        <section class="sevirce">
-            <h2>Let's Work together</h2>
-            <p>I build Scallable Websites</p>
-            <form action=""></form>
-        </section>
-        <hr>
-        <section class="contact">
-            <p>&copy;All Right Reseved By Thembelihle</p>
-        </section>
-
-
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Thembelihle Queeneth Maluka. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
