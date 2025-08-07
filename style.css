@@ -620,8 +620,11 @@ nav {
         flex-direction: column;
     }
     
-    .about-text, .about-image {
+    .about-text{
         text-align: center;
+    }
+    .about-image{
+        display: none;
     }
     
     .bio {
