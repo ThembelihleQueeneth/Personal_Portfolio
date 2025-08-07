@@ -506,9 +506,8 @@ nav {
 .btn-resume {
   display: inline-flex;
   align-items: center;
-  gap: 8px;               /* space between icon and text */
-  padding: 10px 20px;
-  background-color: #FEBE10;;  /* Bootstrap blue */
+  gap: 8px;               
+  background-color: #FEBE10;
   color: white;
   text-decoration: none;
   border-radius: 5px;
