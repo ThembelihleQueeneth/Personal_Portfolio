@@ -1,3 +1,40 @@
+//Declaring greeting
+    const greetings = [
+      "Hello (English)",
+      "Sawubona (Zulu)",
+      "Dumela (Sesotho/Setswana)",
+      "Molo (Xhosa)",
+      "Avuxeni (Xitsonga)",
+      "Ndaa / Aa (Venda)",
+      "Thobela (Sepedi)",
+      "Hallo (Afrikaans)",
+      "Sanibonani (Zulu - plural)",
+      "Abusheni (Xitsonga - informal)",
+      "Lotjhani (Ndebele)"
+    ];
+
+    let index = 0;
+    const greetingElement = document.getElementById("greeting");
+
+    function showGreeting() {
+      // Update text
+      greetingElement.textContent = greetings[index];
+
+      // Restart bounce animation
+      greetingElement.style.animation = "none";
+      greetingElement.offsetHeight; // force reflow
+      greetingElement.style.animation = "bounce 1s ease";
+
+      // Move to next greeting
+      index = (index + 1) % greetings.length;
+    }
+
+    // Initial load
+    showGreeting();
+
+    // Change every 3 seconds
+    setInterval(showGreeting, 3000);
+  
 document.addEventListener('DOMContentLoaded', function() {
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -98,3 +135,5 @@ document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
 });
+
+    

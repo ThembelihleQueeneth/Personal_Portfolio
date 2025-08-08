@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SA Greetings - Bounce Animation</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #greeting {
+      font-size: 3rem;
+      color: #00796b;
+      text-align: center;
+      animation: bounce 1s ease;
+    }
+
+    @keyframes bounce {
+      0%   { transform: scale(0.5); opacity: 0; }
+      50%  { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="greeting">Hello (English)</h1>
+
+  <script>
+    const greetings = [
+      "Hello (English)",
+      "Sawubona (Zulu)",
+      "Dumela (Sesotho/Setswana)",
+      "Molo (Xhosa)",
+      "Avuxeni (Xitsonga)",
+      "Ndaa / Aa (Venda)",
+      "Thobela (Sepedi)",
+      "Hallo (Afrikaans)",
+      "Sanibonani (Zulu - plural)",
+      "Abusheni (Xitsonga - informal)",
+      "Lotjhani (Ndebele)"
+    ];
+
+    let index = 0;
+    const greetingElement = document.getElementById("greeting");
+
+    function showGreeting() {
+      // Update text
+      greetingElement.textContent = greetings[index];
+
+      // Restart bounce animation
+      greetingElement.style.animation = "none";
+      greetingElement.offsetHeight; // force reflow
+      greetingElement.style.animation = "bounce 1s ease";
+
+      // Move to next greeting
+      index = (index + 1) % greetings.length;
+    }
+
+    // Initial load
+    showGreeting();
+
+    // Change every 3 seconds
+    setInterval(showGreeting, 3000);
+  </script>
+
+</body>
+</html>
