@@ -136,4 +136,17 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('#slideshow img');
+  images.forEach(img => {
+    // Random vertical offset between -10px and 10px
+    const randomOffset = Math.floor(Math.random() * 20) - 10;
+    img.style.top = `calc(15px + ${randomOffset}px)`;
+    
+    // Random animation duration between 18s and 22s
+    const randomDuration = 18 + Math.random() * 4;
+    img.style.animationDuration = `${randomDuration}s`;
+  });
+});
+
     
