@@ -536,12 +536,7 @@ nav {
 /* Contact Section */
 .contact {
     background-color: var(--light-bg);
-}
-
-.contact-subtitle {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--light-text);
+    padding: 5rem 1rem;
 }
 
 .contact-form {
@@ -553,36 +548,48 @@ nav {
     box-shadow: var(--box-shadow);
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
+.form-label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
+    color: var(--text-color);
 }
 
-.form-group input,
-.form-group textarea {
+.form-control {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: var(--border-radius);
     font-family: inherit;
     transition: var(--transition);
+    margin-bottom: 1rem;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-control:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(254, 190, 16, 0.2);
 }
 
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
+.form-text {
+    font-size: 0.875rem;
+    color: var(--light-text);
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+    transform: translateY(-2px);
 }
 
 /* Footer */
