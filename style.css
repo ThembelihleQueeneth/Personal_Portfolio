@@ -233,11 +233,22 @@ nav {
     box-shadow: var(--box-shadow);
 }
 
+/* Add this to your CSS */
+#animated-greeting {
+  display: inline-block;
+  animation: bounce 0.5s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0) scale(1); }
+  to { transform: translateY(-10px) scale(1.05); }
+}
+
+/* Optional: Add color transition */
 .greeting {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    animation: bounce 1s ease;
+  transition: color 0.5s ease;
+  color: var(--primary-color);
 }
 
 @keyframes bounce {

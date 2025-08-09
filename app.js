@@ -1,41 +1,48 @@
-//Declaring greeting
-    const greetings = [
-      "Hello (English)",
-      "Sawubona (Zulu)",
-      "Dumela (Sesotho/Setswana)",
-      "Molo (Xhosa)",
-      "Avuxeni (Xitsonga)",
-      "Ndaa / Aa (Venda)",
-      "Thobela (Sepedi)",
-      "Hallo (Afrikaans)",
-      "Sanibonani (Zulu - plural)",
-      "Abusheni (Xitsonga - informal)",
-      "Lotjhani (Ndebele)"
-    ];
+  // Update your JavaScript
+const greetings = [
+  "Hello (English)",
+  "Sawubona (Zulu)",
+  "Dumela (Sesotho/Setswana)",
+  "Molo (Xhosa)",
+  "Avuxeni (Xitsonga)",
+  "Ndaa / Aa (Venda)",
+  "Thobela (Sepedi)",
+  "Hallo (Afrikaans)",
+  "Sanibonani (Zulu - plural)",
+  "Abusheni (Xitsonga - informal)",
+  "Lotjhani (Ndebele)"
+];
 
-    let index = 0;
-    const greetingElement = document.getElementById("greeting");
+const greetingElement = document.getElementById('animated-greeting');
+let currentIndex = 0;
 
-    function showGreeting() {
-      // Update text
-      greetingElement.textContent = greetings[index];
-
-      // Restart bounce animation
-      greetingElement.style.animation = "none";
-      greetingElement.offsetHeight; // force reflow
-      greetingElement.style.animation = "bounce 1s ease";
-
-      // Move to next greeting
-      index = (index + 1) % greetings.length;
-    }
-
-    // Initial load
-    showGreeting();
-
-    // Change every 3 seconds
-    setInterval(showGreeting, 3000);
+function changeGreeting() {
+  // Add color change animation
+  greetingElement.style.color = '#FEBE10'; // Your accent color
+  greetingElement.style.animation = 'none';
   
-document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
+    greetingElement.textContent = greetings[currentIndex];
+    greetingElement.style.color = ''; // Reset to default
+    greetingElement.style.animation = '';
+    
+    currentIndex = (currentIndex + 1) % greetings.length;
+  }, 300);
+}
+
+// Change greeting every 3 seconds
+setInterval(changeGreeting, 3000);
+
+// Initial bounce effect
+greetingElement.addEventListener('mouseover', () => {
+  greetingElement.style.animation = 'bounce 0.5s ease infinite alternate';
+});
+
+greetingElement.addEventListener('mouseout', () => {
+  greetingElement.style.animation = 'bounce 0.5s ease infinite alternate';
+});
+  
+  document.addEventListener('DOMContentLoaded', function() {
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
     
